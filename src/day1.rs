@@ -11,7 +11,7 @@ mod tests {
 
         let mut lines = 0;
         for line in reader.lines() {
-            assert!(line.unwrap().parse::<u32>().is_ok(), "Each line should be valid integer");
+            assert!(line.unwrap().parse::<i32>().is_ok(), "Each line should be valid integer");
             lines += 1;
         }
 
