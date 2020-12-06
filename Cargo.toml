@@ -10,3 +10,4 @@ edition = "2018"
 path="./src/day1.rs"
 
 [dependencies]
+rand = "0.7.3"

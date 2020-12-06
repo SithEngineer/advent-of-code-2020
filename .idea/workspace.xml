@@ -4,11 +4,23 @@
     <cargoProject FILE="$PROJECT_DIR$/Cargo.toml" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ac0b7d4a-5924-485d-81e1-ee89801a2fb7" name="Default Changelist" comment="" />
+    <list default="true" id="ac0b7d4a-5924-485d-81e1-ee89801a2fb7" name="Default Changelist" comment="Validate day 2 input: which is the same as day 1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day1.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/day1.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day2.rs" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Rust File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -17,6 +29,9 @@
     <option name="directoryName" value="ngzc7t11" />
   </component>
   <component name="ProjectId" id="1lCVFDlDDM5JQTNc47JJ0033PyE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -29,8 +44,9 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day1.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day2.rs" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::solve_for_input">
+  <component name="RunManager">
     <configuration name="Test all" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test" />
@@ -43,41 +59,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::read_file" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package advent-of-code-2020 --lib tests::read_file -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test tests::solve_for_input" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package advent-of-code-2020 --lib tests::solve_for_input -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="Cargo.Test all" />
-      <item itemvalue="Cargo.Test tests::read_file" />
-      <item itemvalue="Cargo.Test tests::solve_for_input" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.Test tests::solve_for_input" />
-        <item itemvalue="Cargo.Test tests::read_file" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -91,6 +72,35 @@
       <option name="presentableId" value="Default" />
       <updated>1607100954930</updated>
     </task>
+    <task id="LOCAL-00001" summary="Start Advent of Code 2020 project">
+      <created>1607255713505</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607255713505</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Day 1 solution">
+      <created>1607255733030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1607255733030</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Change day 1 solution to validate file using signed integers">
+      <created>1607256076598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1607256076598</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Validate day 2 input: which is the same as day 1">
+      <created>1607256132305</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1607256132305</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -103,5 +113,12 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Start Advent of Code 2020 project" />
+    <MESSAGE value="Day 1 solution" />
+    <MESSAGE value="Change day 1 solution to validate file using signed integers" />
+    <MESSAGE value="Validate day 2 input: which is the same as day 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Validate day 2 input: which is the same as day 1" />
   </component>
 </project>
