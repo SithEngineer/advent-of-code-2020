@@ -31,6 +31,11 @@ mod day2 {
             let char_count = self.existing_password.iter().filter(|&c| c.eq(&self.pass_char)).count();
             char_count >= self.min_count && char_count <= self.max_count
         }
+
+        pub fn is_valid_with_position_check(&self) -> bool {
+            (self.existing_password[self.min_count - 1] == self.pass_char) ^
+                (self.existing_password[self.max_count - 1] == self.pass_char)
+        }
     }
 }
 
@@ -78,6 +83,27 @@ mod tests {
     }
 
     #[test]
+    fn policy_validates_password_with_position_check() {
+        let line: &str = "1-3 a: abcde";
+        let policy = PolicyWithPassword::from_slice(line);
+        assert!(policy.is_valid_with_position_check());
+    }
+
+    #[test]
+    fn policy_invalidates_password_with_position_check_missing_single_char_match() {
+        let line: &str = "1-3 b: cdefg";
+        let policy = PolicyWithPassword::from_slice(line);
+        assert!(!policy.is_valid_with_position_check());
+    }
+
+    #[test]
+    fn policy_invalidates_password_with_position_check_multiple_char_match() {
+        let line: &str = "2-9 c: ccccccccc";
+        let policy = PolicyWithPassword::from_slice(line);
+        assert!(!policy.is_valid_with_position_check());
+    }
+
+    #[test]
     fn input_is_valid() {
         let file = File::open("resources/day-2-input").unwrap();
         let reader = BufReader::new(file);
@@ -102,6 +128,21 @@ mod tests {
 
         let valid_passwords = policies.iter().filter(|p| p.is_valid()).count();
         println!("Valid passwords found={}", valid_passwords);
+        assert!(valid_passwords > 0);
+    }
+
+    #[test]
+    fn count_valid_passwords_with_position_check() {
+        let file = File::open("resources/day-2-input").unwrap();
+        let reader = BufReader::new(file);
+
+        let mut policies: Vec<PolicyWithPassword> = Vec::new();
+        for line in reader.lines() {
+            policies.push(PolicyWithPassword::from_string(line.unwrap()))
+        }
+
+        let valid_passwords = policies.iter().filter(|p| p.is_valid_with_position_check()).count();
+        println!("Valid passwords with position check found={}", valid_passwords);
         assert!(valid_passwords > 0);
     }
 }
