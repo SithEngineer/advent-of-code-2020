@@ -112,7 +112,7 @@ mod day2_tests {
             policies.push(PolicyWithPassword::from_string(line.unwrap()))
         }
 
-        assert_eq!(1000, policies.len(), "Input file is expected to have 200 lines");
+        assert_eq!(1000, policies.len(), "Input file is expected to have 1000 lines");
     }
 
     #[test]
