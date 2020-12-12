@@ -39,7 +39,7 @@ mod day2 {
     }
 }
 
-mod tests {
+mod day2_tests {
     use std::fs::File;
     use std::io::{BufReader, BufRead};
     use crate::day2::{PolicyWithPassword};

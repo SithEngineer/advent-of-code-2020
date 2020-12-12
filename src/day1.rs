@@ -40,7 +40,7 @@ mod day1 {
     }
 }
 
-mod tests {
+mod day1_tests {
     use std::fs::File;
     use std::io::{BufReader, BufRead};
     use std::fs;
