@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac0b7d4a-5924-485d-81e1-ee89801a2fb7" name="Default Changelist" comment="Validate day 1 part 2 input: which is the same as day 1 part 1&#10;Use a &quot;creative&quot; solution to solve the question at hand. Waiting times may vary :)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/day2.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/day2.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +49,22 @@
     <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day1.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day2.rs" value="true" />
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::count_valid_passwords">
+  <component name="RunManager" selected="Cargo.Test day2::tests">
     <configuration name="Test all" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test day2::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package advent-of-code-2020 --lib tests" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -74,33 +86,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::input_is_valid" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package advent-of-code-2020 --lib tests::input_is_valid -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test tests::policy_invalidates_password" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package advent-of-code-2020 --lib tests::policy_invalidates_password -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test tests::policy_is_extracted_from_line" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package advent-of-code-2020 --lib tests::policy_is_extracted_from_line -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -122,13 +110,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test tests::policy_validates_password_with_position_check" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package advent-of-code-2020 --lib tests::policy_validates_password_with_position_check -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test day2::tests" />
+        <item itemvalue="Cargo.Test tests::policy_validates_password_with_position_check" />
         <item itemvalue="Cargo.Test tests::count_valid_passwords" />
         <item itemvalue="Cargo.Test tests::policy_validates_password" />
         <item itemvalue="Cargo.Test tests::policy_invalidates_password" />
-        <item itemvalue="Cargo.Test tests::input_is_valid" />
-        <item itemvalue="Cargo.Test tests::policy_is_extracted_from_line" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607302128876</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Solve day 2, part 1">
+      <created>1607729898082</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1607729898082</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -201,6 +208,7 @@
     <MESSAGE value="Change day 1 solution to validate file using signed integers" />
     <MESSAGE value="Validate day 2 input: which is the same as day 1" />
     <MESSAGE value="Validate day 1 part 2 input: which is the same as day 1 part 1&#10;Use a &quot;creative&quot; solution to solve the question at hand. Waiting times may vary :)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Validate day 1 part 2 input: which is the same as day 1 part 1&#10;Use a &quot;creative&quot; solution to solve the question at hand. Waiting times may vary :)" />
+    <MESSAGE value="Solve day 2, part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve day 2, part 1" />
   </component>
 </project>
