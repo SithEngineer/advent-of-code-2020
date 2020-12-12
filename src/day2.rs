@@ -1,5 +1,4 @@
 mod day2 {
-    #[derive(Debug)]
     pub struct PolicyWithPassword {
         pub min_count: usize,
         pub max_count: usize,
