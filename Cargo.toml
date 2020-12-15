@@ -1,13 +1,15 @@
 [package]
 name = "advent-of-code-2020"
+description = "My personal solutions to Advent of Code 2020"
 version = "0.1.0"
 authors = ["sithengineer"]
 edition = "2018"
+documentation = "https://adventofcode.com/2020"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-path="./src/day5.rs"
+path="./src/day6.rs"
 
 [dependencies]
 rand = "0.7.3"
