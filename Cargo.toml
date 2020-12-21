@@ -9,7 +9,7 @@ documentation = "https://adventofcode.com/2020"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-path="./src/day6.rs"
+path="./src/day7.rs"
 
 [dependencies]
 rand = "0.7.3"

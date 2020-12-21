@@ -8,7 +8,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ac0b7d4a-5924-485d-81e1-ee89801a2fb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -307,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608154132926</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add saveactions plugin settings">
+      <created>1608564837482</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1608564837482</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,7 +347,8 @@
     <MESSAGE value="Solve day 5, part 1 &amp; 2." />
     <MESSAGE value="Solve day 6, part 1." />
     <MESSAGE value="Solve day 6, part 1 &amp; 2." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve day 6, part 1 &amp; 2." />
+    <MESSAGE value="Add saveactions plugin settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add saveactions plugin settings" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
