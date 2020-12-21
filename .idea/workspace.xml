@@ -9,7 +9,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ac0b7d4a-5924-485d-81e1-ee89801a2fb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/day6.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/day6.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,24 +54,12 @@
     <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day3.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day4.rs" value="true" />
     <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day5.rs" value="true" />
+    <property name="org.rust.disableDetachedFileInspection/home/sithengineer/repos/advent-of-code-2020/src/day7.rs" value="true" />
+    <property name="settings.editor.selected.configurable" value="settings.saveactions" />
   </component>
-  <component name="RunManager" selected="Cargo.Test day6_tests">
+  <component name="RunManager" selected="Cargo.Test day7_tests::main_bag_is_found">
     <configuration name="Test all" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="test" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test day5_tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent-of-code-2020 --lib day5_tests" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -98,8 +86,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day6_tests::group_commons_count_is_one_for_all_people_and_non_correct_answers" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent-of-code-2020 --lib day6_tests::group_commons_count_is_one_for_all_people_and_non_correct_answers -- --exact" />
+    <configuration name="Test day7_tests::bag_name_and_count_is_found1" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent-of-code-2020 --lib day7_tests::bag_name_and_count_is_found1 -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -112,8 +100,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day6_tests::group_count_is_correct" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent-of-code-2020 --lib day6_tests::group_count_is_correct -- --exact" />
+    <configuration name="Test day7_tests::bag_name_and_count_is_found2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent-of-code-2020 --lib day7_tests::bag_name_and_count_is_found2 -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -126,8 +114,22 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test day6_tests::solve_part_2" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package advent-of-code-2020 --lib day6_tests::solve_part_2 -- --exact" />
+    <configuration name="Test day7_tests::bag_name_and_count_is_found3" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent-of-code-2020 --lib day7_tests::bag_name_and_count_is_found3 -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test day7_tests::main_bag_is_found" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package advent-of-code-2020 --lib day7_tests::main_bag_is_found -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="allFeatures" value="false" />
@@ -142,16 +144,18 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test day7_tests::main_bag_is_found" />
+        <item itemvalue="Cargo.Test day7_tests::bag_name_and_count_is_found3" />
+        <item itemvalue="Cargo.Test day7_tests::bag_name_and_count_is_found2" />
+        <item itemvalue="Cargo.Test day7_tests::bag_name_and_count_is_found1" />
         <item itemvalue="Cargo.Test day6_tests" />
-        <item itemvalue="Cargo.Test day6_tests::group_commons_count_is_one_for_all_people_and_non_correct_answers" />
-        <item itemvalue="Cargo.Test day6_tests::solve_part_2" />
-        <item itemvalue="Cargo.Test day6_tests::group_count_is_correct" />
-        <item itemvalue="Cargo.Test day5_tests" />
       </list>
     </recent_temporary>
   </component>
   <component name="RustProjectSettings">
+    <option name="runRustfmtOnSave" value="true" />
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+    <option name="useRustfmt" value="true" />
     <option name="version" value="2" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -296,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608075240424</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Solve day 6, part 1 &amp; 2.">
+      <created>1608154132926</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1608154132926</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -329,6 +340,11 @@
     <MESSAGE value="Solve day 5, part 1." />
     <MESSAGE value="Solve day 5, part 1 &amp; 2." />
     <MESSAGE value="Solve day 6, part 1." />
-    <option name="LAST_COMMIT_MESSAGE" value="Solve day 6, part 1." />
+    <MESSAGE value="Solve day 6, part 1 &amp; 2." />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve day 6, part 1 &amp; 2." />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
